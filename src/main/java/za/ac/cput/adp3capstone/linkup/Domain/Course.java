@@ -6,7 +6,7 @@ Author: Brezano Liebenberg (230463886)
 Date:9 May 2025
 */
 
-public enum Major {
+public enum Course {
     BA_IN_PSYCHOLOGY("BA in Psychology"),
     BA_IN_POLITICAL_SCIENCE("BA in Political Science"),
     BA_IN_SOCIOLOGY("BA in Sociology"),
@@ -43,7 +43,7 @@ public enum Major {
 
     private final String displayName;
 
-    Major(String displayName) {
+    Course(String displayName) {
         this.displayName = displayName;
     }
 
