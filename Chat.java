@@ -1,5 +1,8 @@
 package za.ac.cput.adp3capstone.linkup.Domain;
-
+/*Chat.java
+Chat model class
+Author: Anita Lottering 222141395
+Date:8th May 2025*/
 import java.time.LocalDateTime;
 
 public class Chat {
