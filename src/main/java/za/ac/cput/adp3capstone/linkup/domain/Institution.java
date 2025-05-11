@@ -1,5 +1,9 @@
 package za.ac.cput.adp3capstone.linkup.domain;
-
+/* Institution.java
+Institution enum
+Author: Ethan Le Roux (222622172)
+Date:7 May 2025
+*/
 public enum Institution {
     UNIVERSITY_OF_CAPE_TOWN("University of Cape Town"),
     UNIVERSITY_OF_THE_WITWATERSRAND("University of the Witwatersrand"),

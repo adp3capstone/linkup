@@ -1,4 +1,4 @@
-package za.ac.cput.domain;
+package za.ac.cput.adp3capstone.linkup.domain;
 /*Gender.java
 Author: SH Kgomokaboya(222152672)
 Date : 11May 2025
