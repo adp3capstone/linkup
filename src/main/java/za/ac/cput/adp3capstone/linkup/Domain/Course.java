@@ -7,47 +7,42 @@ Date:9 May 2025
 */
 
 public enum Course {
-    BA_IN_PSYCHOLOGY("BA in Psychology"),
-    BA_IN_POLITICAL_SCIENCE("BA in Political Science"),
-    BA_IN_SOCIOLOGY("BA in Sociology"),
-    BA_IN_INTERNATIONAL_RELATIONS("BA in International Relations"),
+    BA_IN_PSYCHOLOGY,
+    BA_IN_POLITICAL_SCIENCE,
+    BA_IN_SOCIOLOGY,
+    BA_IN_INTERNATIONAL_RELATIONS,
 
-    BCOM_IN_ACCOUNTING("BCom in Accounting"),
-    BCOM_IN_ECONOMICS("BCom in Economics"),
-    BCOM_IN_FINANCE("BCom in Finance"),
-    BCOM_IN_MARKETING("BCom in Marketing"),
+    BCOM_IN_ACCOUNTING,
+    BCOM_IN_ECONOMICS,
+    BCOM_IN_FINANCE,
+    BCOM_IN_MARKETING,
 
-    BSC_IN_COMPUTER_SCIENCE("BSc in Computer Science"),
-    BSC_IN_MATHEMATICS("BSc in Mathematics and Statistics"),
-    BSC_IN_PHYSICS("BSc in Physics"),
-    BSC_IN_CHEMISTRY("BSc in Chemistry"),
+    BSC_IN_COMPUTER_SCIENCE,
+    BSC_IN_MATHEMATICS,
+    BSC_IN_PHYSICS,
+    BSC_IN_CHEMISTRY,
 
-    BACHELOR_OF_ENGINEERING_IN_CIVIL_ENGINEERING("Bachelor of Engineering in Civil Engineering"),
-    BACHELOR_OF_ENGINEERING_IN_MECHANICAL_ENGINEERING("Bachelor of Engineering in Mechanical Engineering"),
-    BACHELOR_OF_ENGINEERING_IN_ELECTRICAL_AND_ELECTRONIC("Bachelor of Engineering in Electrical and Electronic"),
-    BACHELOR_OF_ENGINEERING_IN_CHEMICAL_ENGINEERING("Bachelor of Engineering in Chemical Engineering"),
+    BACHELOR_OF_ENGINEERING_IN_CIVIL_ENGINEERING,
+    BACHELOR_OF_ENGINEERING_IN_MECHANICAL_ENGINEERING,
+    BACHELOR_OF_ENGINEERING_IN_ELECTRICAL_AND_ELECTRONIC,
+    BACHELOR_OF_ENGINEERING_IN_CHEMICAL_ENGINEERING,
 
-    MBChB("Bachelor of Medicine and Bachelor of Surgery"),
-    BNurs("Bachelor of Nursing"),
-    BPharm("Bachelor of Pharmacy"),
-    BOccTher("Bachelor of Occupational Therapy"),
+    BACHELOR_OF_MEDICINE_AND_BACHELOR_OF_SURGERY,
+    BACHELOR_OF_NURSING,
+    BACHELOR_OF_PHARMACY,
+    BACHELOR_OF_OCCUPATIONAL_THERAPY,
 
-    BACHELOR_OF_EDUCATION_IN_FOUNDATION_PHASE("Foundation Phase"),
-    BACHELOR_OF_EDUCATION_IN_INTERMEDIARY_PHASE("Intermediate Phase"),
-    BACHELOR_OF_EDUCATION_IN_SENOIR_AND_FET_PHASE("Senior & FET Phase"),
-    BACHELOR_OF_EDUCATION_IN_HONOURS_IN_EDUCATIONAL_PSYCHOLOGY("Honours in Educational Psychology"),
+    BACHELOR_OF_EDUCATION_IN_FOUNDATION_PHASE,
+    BACHELOR_OF_EDUCATION_IN_INTERMEDIARY_PHASE,
+    BACHELOR_OF_EDUCATION_IN_SENOIR_AND_FET_PHASE,
+    BACHELOR_OF_EDUCATION_IN_HONOURS_IN_EDUCATIONAL_PSYCHOLOGY,
 
-    LLB("Bachelor of Laws"),
-    BA_IN_LAW("Bachelor of Arts with Law as a major"),
-    BCom_IN_LAW("Bachelor of Commerce with Law as a major");
+    BACHELOR_OF_LAWS,
+    BACHELOR_OF_ARTS_WITH_LAW_AS_AS_MAJOR,
+    BACHELOR_OF_COMMERCE_WITH_LAW_AS_AS_MAJOR,
 
-    private final String displayName;
-
-    Course(String displayName) {
-        this.displayName = displayName;
-    }
-
-    public String getDisplayName() {
-        return displayName;
-    }
+    BA_IN_FILM_AND_TELEVISION,
+    BA_IN_THEATRE_AND_PERFORMANCE,
+    BA_IN_FASHION,
+    BA_IN_VISUAL_COMMUNICATION_DESIGN;
 }
