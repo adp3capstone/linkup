@@ -1,4 +1,4 @@
-package za.ac.cput.adp3capstone.linkup.Domain.message;
+package za.ac.cput.adp3capstone.linkup.domain.message;
 
 /* MessageType.java
 MessageType enum
@@ -8,19 +8,9 @@ Date:9 May 2025
 
 public enum MessageType {
 
-    TEXT("Text"),
-    IMAGE("Image"),
-    VIDEO("Video"),
-    GIF("GIF"),
-    VOICENOTE("Voice Note");
-
-    private final String displayName;
-
-    MessageType(String displayName) {
-        this.displayName = displayName;
-    }
-
-    public String getDisplayName(){
-        return displayName;
-    }
+    TEXT,
+    IMAGE,
+    VIDEO,
+    GIF,
+    VOICENOTE;
 }
