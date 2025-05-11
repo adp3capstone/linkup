@@ -2,7 +2,7 @@ package za.ac.cput.adp3capstone.linkup.domain;
 /* Image.java
 Image model class
 Author: Ethan Le Roux (222622172)
-Date:6 May 2025
+Date:11 May 2025
 */
 public class Image {
     private long imageId;
