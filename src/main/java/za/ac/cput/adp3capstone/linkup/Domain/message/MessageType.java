@@ -8,19 +8,10 @@ Date:9 May 2025
 
 public enum MessageType {
 
-    TEXT("Text"),
-    IMAGE("Image"),
-    VIDEO("Video"),
-    GIF("GIF"),
-    VOICENOTE("Voice Note");
+    TEXT,
+    IMAGE,
+    VIDEO,
+    GIF,
+    VOICENOTE;
 
-    private final String displayName;
-
-    MessageType(String displayName) {
-        this.displayName = displayName;
-    }
-
-    public String getDisplayName(){
-        return displayName;
-    }
 }

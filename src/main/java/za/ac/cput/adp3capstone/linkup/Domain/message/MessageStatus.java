@@ -7,18 +7,9 @@ Date:9 May 2025
 */
 
 public enum MessageStatus {
-    SENT("Sent"),
-    DELIVERED("delivered"),
-    FAILED("failed"),
-    PENDING("Pending");
+    SENT,
+    DELIVERED,
+    FAILED,
+    PENDING;
 
-    private final String displayName;
-
-    MessageStatus(String displayName) {
-        this.displayName = displayName;
-    }
-
-    public String getDisplayName(){
-        return displayName;
-    }
 }
