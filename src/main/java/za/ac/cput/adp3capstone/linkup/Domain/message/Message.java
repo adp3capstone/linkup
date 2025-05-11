@@ -1,8 +1,8 @@
 package za.ac.cput.adp3capstone.linkup.domain.message;
 
 import java.time.LocalDate;
-import za.ac.cput.adp3capstone.linkup.Domain.message.MessageStatus;
-import za.ac.cput.adp3capstone.linkup.Domain.message.MessageType;
+import za.ac.cput.adp3capstone.linkup.domain.message.MessageStatus;
+import za.ac.cput.adp3capstone.linkup.domain.message.MessageType;
 
 public class Message {
     private long messageId;
