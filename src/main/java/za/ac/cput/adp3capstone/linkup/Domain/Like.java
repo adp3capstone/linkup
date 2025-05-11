@@ -1,4 +1,9 @@
 package za.ac.cput.adp3capstone.linkup.Domain;
+/*Like.java
+Author: LM Makhanya(222788291)
+Date : 11May 2025
+ */
+
 
 import java.time.LocalDateTime;
 
