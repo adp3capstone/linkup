@@ -1,5 +1,11 @@
 package za.ac.cput.adp3capstone.linkup.domain.message;
 
+/* Message.java
+Message class
+Author: Brezano Liebenberg (230463886)
+Date:9 May 2025
+*/
+
 import java.time.LocalDate;
 import za.ac.cput.adp3capstone.linkup.domain.message.MessageStatus;
 import za.ac.cput.adp3capstone.linkup.domain.message.MessageType;
