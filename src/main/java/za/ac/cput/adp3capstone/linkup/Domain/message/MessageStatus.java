@@ -1,4 +1,4 @@
-package za.ac.cput.adp3capstone.linkup.Domain.message;
+package za.ac.cput.adp3capstone.linkup.domain.message;
 
 /* MessageStatus.java
 MessageStatus enum
@@ -11,5 +11,4 @@ public enum MessageStatus {
     DELIVERED,
     FAILED,
     PENDING;
-
 }

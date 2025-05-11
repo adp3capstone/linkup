@@ -1,4 +1,4 @@
-package za.ac.cput.adp3capstone.linkup.Domain.message;
+package za.ac.cput.adp3capstone.linkup.domain.message;
 
 /* MessageType.java
 MessageType enum
@@ -13,5 +13,4 @@ public enum MessageType {
     VIDEO,
     GIF,
     VOICENOTE;
-
 }

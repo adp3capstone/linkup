@@ -1,4 +1,4 @@
-package za.ac.cput.adp3capstone.linkup.Domain;
+package za.ac.cput.adp3capstone.linkup.domain;
 
 /* Major.java
 Major enum
@@ -6,7 +6,7 @@ Author: Brezano Liebenberg (230463886)
 Date:9 May 2025
 */
 
-public enum Major {
+public enum Course {
     BA_IN_PSYCHOLOGY,
     BA_IN_POLITICAL_SCIENCE,
     BA_IN_SOCIOLOGY,
@@ -45,5 +45,4 @@ public enum Major {
     BA_IN_THEATRE_AND_PERFORMANCE,
     BA_IN_FASHION,
     BA_IN_VISUAL_COMMUNICATION_DESIGN;
-
 }
