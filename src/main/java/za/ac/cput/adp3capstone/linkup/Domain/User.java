@@ -1,11 +1,14 @@
 package za.ac.cput.adp3capstone.linkup.domain;
 
-/*User.java
-Author: SH Kgomokaboya(222152672)
-Date : 11May 2025
+import java.util.List;
+
+/**
+ * User.java
+ * Author: SH Kgomokaboya (222152672)
+ * Date: 11 May 2025
  */
 public class User {
-    private String userId;
+    private int userId;
     private String username;
     private String password;
     private String email;
@@ -14,12 +17,15 @@ public class User {
     private String age;
     private Gender gender;
     private String bio;
-    private String profilePicture;
-    private String university;
-    private String course;
+    private List<String> university;
+    private List<String> course;
     private String yearOfStudy;
     private boolean isVerified;
     private Preference preferences;
+    private List<String> likes;
+    private List<String> matches;
+    private List<String> images;
+    private Chart chart;
 
     public User() {}
 
@@ -33,15 +39,18 @@ public class User {
         this.age = builder.age;
         this.gender = builder.gender;
         this.bio = builder.bio;
-        this.profilePicture = builder.profilePicture;
         this.university = builder.university;
         this.course = builder.course;
         this.yearOfStudy = builder.yearOfStudy;
         this.isVerified = builder.isVerified;
         this.preferences = builder.preferences;
+        this.likes = builder.likes;
+        this.matches = builder.matches;
+        this.images = builder.images;
+        this.chart = builder.chart;
     }
 
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
@@ -77,15 +86,11 @@ public class User {
         return bio;
     }
 
-    public String getProfilePicture() {
-        return profilePicture;
-    }
-
-    public String getUniversity() {
+    public List<String> getUniversity() {
         return university;
     }
 
-    public String getCourse() {
+    public List<String> getCourse() {
         return course;
     }
 
@@ -101,10 +106,26 @@ public class User {
         return preferences;
     }
 
+    public List<String> getLikes() {
+        return likes;
+    }
+
+    public List<String> getMatches() {
+        return matches;
+    }
+
+    public List<String> getImages() {
+        return images;
+    }
+
+    public Chart getChart() {
+        return chart;
+    }
+
     @Override
     public String toString() {
         return "User{" +
-                "userId='" + userId + '\'' +
+                "userId=" + userId +
                 ", username='" + username + '\'' +
                 ", email='" + email + '\'' +
                 ", firstName='" + firstName + '\'' +
@@ -112,17 +133,20 @@ public class User {
                 ", age=" + age +
                 ", gender='" + gender + '\'' +
                 ", bio='" + bio + '\'' +
-                ", profilePicture='" + profilePicture + '\'' +
-                ", university='" + university + '\'' +
-                ", course='" + course + '\'' +
+                ", university=" + university +
+                ", course=" + course +
                 ", yearOfStudy=" + yearOfStudy +
                 ", isVerified=" + isVerified +
                 ", preferences=" + preferences +
+                ", likes=" + likes +
+                ", matches=" + matches +
+                ", images=" + images +
+                ", chart=" + chart +
                 '}';
     }
 
     public static class Builder {
-        private String userId;
+        private int userId;
         private String username;
         private String password;
         private String email;
@@ -131,14 +155,17 @@ public class User {
         private String age;
         private Gender gender;
         private String bio;
-        private String profilePicture;
-        private String university;
-        private String course;
+        private List<String> university;
+        private List<String> course;
         private String yearOfStudy;
         private boolean isVerified;
         private Preference preferences;
+        private List<String> likes;
+        private List<String> matches;
+        private List<String> images;
+        private Chart chart;
 
-        public Builder setUserId(String userId) {
+        public Builder setUserId(int userId) {
             this.userId = userId;
             return this;
         }
@@ -183,17 +210,12 @@ public class User {
             return this;
         }
 
-        public Builder setProfilePicture(String profilePicture) {
-            this.profilePicture = profilePicture;
-            return this;
-        }
-
-        public Builder setUniversity(String university) {
+        public Builder setUniversity(List<String> university) {
             this.university = university;
             return this;
         }
 
-        public Builder setCourse(String course) {
+        public Builder setCourse(List<String> course) {
             this.course = course;
             return this;
         }
@@ -213,6 +235,26 @@ public class User {
             return this;
         }
 
+        public Builder setLikes(List<String> likes) {
+            this.likes = likes;
+            return this;
+        }
+
+        public Builder setMatches(List<String> matches) {
+            this.matches = matches;
+            return this;
+        }
+
+        public Builder setImages(List<String> images) {
+            this.images = images;
+            return this;
+        }
+
+        public Builder setChart(Chart chart) {
+            this.chart = chart;
+            return this;
+        }
+
         public Builder copy(User user) {
             this.userId = user.userId;
             this.username = user.username;
@@ -223,12 +265,15 @@ public class User {
             this.age = user.age;
             this.gender = user.gender;
             this.bio = user.bio;
-            this.profilePicture = user.profilePicture;
             this.university = user.university;
             this.course = user.course;
             this.yearOfStudy = user.yearOfStudy;
             this.isVerified = user.isVerified;
             this.preferences = user.preferences;
+            this.likes = user.likes;
+            this.matches = user.matches;
+            this.images = user.images;
+            this.chart = user.chart;
             return this;
         }
 

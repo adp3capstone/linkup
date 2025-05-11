@@ -1,13 +1,14 @@
 package za.ac.cput.adp3capstone.linkup.domain;
 
-/*Preference.java
-Author: SH Kgomokaboya(222152672)
-Date : 11May 2025
- */
+/* Preference.java
+Author: SH Kgomokaboya (222152672)
+Date: 11 May 2025
+*/
+
 import java.util.List;
 
 public class Preference {
-    private String preferenceId;
+    private int preferenceId;
     private int minAge;
     private int maxAge;
     private String preferredGender;
@@ -33,7 +34,7 @@ public class Preference {
         this.interests = builder.interests;
     }
 
-    public String getPreferenceId() {
+    public int getPreferenceId() {
         return preferenceId;
     }
 
@@ -76,7 +77,7 @@ public class Preference {
     @Override
     public String toString() {
         return "Preference{" +
-                "preferenceId='" + preferenceId + '\'' +
+                "preferenceId=" + preferenceId +
                 ", minAge=" + minAge +
                 ", maxAge=" + maxAge +
                 ", preferredGender='" + preferredGender + '\'' +
@@ -90,7 +91,7 @@ public class Preference {
     }
 
     public static class Builder {
-        private String preferenceId;
+        private int preferenceId;
         private int minAge;
         private int maxAge;
         private String preferredGender;
@@ -101,7 +102,7 @@ public class Preference {
         private String relationshipType;
         private List<String> interests;
 
-        public Builder setPreferenceId(String preferenceId) {
+        public Builder setPreferenceId(int preferenceId) {
             this.preferenceId = preferenceId;
             return this;
         }
