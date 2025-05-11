@@ -1,4 +1,4 @@
-package za.ac.cput.adp3capstone.linkup.Domain;
+package za.ac.cput.adp3capstone.linkup.domain;
 
 /* Major.java
 Major enum
