@@ -1,4 +1,8 @@
 package za.ac.cput.domain;
+/*Gender.java
+Author: SH Kgomokaboya(222152672)
+Date : 11May 2025
+ */
 
 public enum Gender {
     MALE,

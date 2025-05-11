@@ -1,5 +1,9 @@
 package za.ac.cput.domain;
 
+/*User.java
+Author: SH Kgomokaboya(222152672)
+Date : 11May 2025
+ */
 public class User {
     private String userId;
     private String username;
