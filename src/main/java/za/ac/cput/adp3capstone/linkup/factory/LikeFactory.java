@@ -1,11 +1,15 @@
 package za.ac.cput.adp3capstone.linkup.factory;
+/*Like.java
+Author: LM Makhanya(222788291)
+Date : 11May 2025
+ */
 
 import za.ac.cput.adp3capstone.linkup.Domain.Like;
 import za.ac.cput.adp3capstone.linkup.util.Helper;
 
 import java.time.LocalDateTime;
 
-public class LikeFatory {
+public class LikeFactory {
     public static Like createLike(int likeId, int fromUserId, int toUserId, LocalDateTime timestamp){
         if (Helper.isIntNull(likeId) || Helper.isIntNegative(likeId) ||
                 Helper.isIntNull(fromUserId) || Helper.isIntNegative(fromUserId) ||

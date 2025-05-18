@@ -1,5 +1,8 @@
 package za.ac.cput.adp3capstone.linkup.factory;
-
+/*Like.java
+Author: LM Makhanya(222788291)
+Date : 11May 2025
+ */
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
@@ -15,7 +18,7 @@ class LikeFatoryTest {
 
     @Test
     void a_createLike_successful() {
-        Like like = LikeFatory.createLike(1, 100, 200, LocalDateTime.now());
+        Like like = LikeFactory.createLike(1, 100, 200, LocalDateTime.now());
         assertNotNull(like);
         assertEquals(1, like.getLikeId());
         assertEquals(100, like.getFromUserId());
@@ -25,19 +28,19 @@ class LikeFatoryTest {
 
     @Test
     void b_createLike_futureDate() {
-        Like like = LikeFatory.createLike(1, 100, 200, LocalDateTime.now().plusDays(1));
+        Like like = LikeFactory.createLike(1, 100, 200, LocalDateTime.now().plusDays(1));
         assertNull(like);
     }
 
     @Test
     void c_createLike_negativeId() {
-        Like like = LikeFatory.createLike(-1, 100, 200, LocalDateTime.now());
+        Like like = LikeFactory.createLike(-1, 100, 200, LocalDateTime.now());
         assertNull(like);
     }
 
     @Test
     void d_createLike_nullDate() {
-        Like like = LikeFatory.createLike(1, 100, 200, null);
+        Like like = LikeFactory.createLike(1, 100, 200, null);
         assertNull(like);
     }
 }
