@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 
 public class Helper {
     public static boolean isStringNullOrEmpty(String x){
-        if(x.isEmpty() || x == null)
+        if(x == null || x.isEmpty())
             return true;
         return false;
     }
@@ -40,7 +40,7 @@ public class Helper {
         }
         return false;
     }
-
+  
     public static boolean isValidEmail(String email) {
         return !isStringNullOrEmpty(email) &&
                 email.matches("^[\\w-.]+@([\\w-]+\\.)+[\\w-]{2,4}$");
@@ -53,6 +53,10 @@ public class Helper {
 
     public static boolean isDateInFuture(LocalDateTime dateTime) {
         return dateTime != null && dateTime.isAfter(LocalDateTime.now());
+    }
+
+    public static boolean isValidLong(Long value) {
+        return value != null && value > 0;
     }
 
 }
