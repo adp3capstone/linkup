@@ -1,6 +1,7 @@
 package za.ac.cput.adp3capstone.linkup.util;
 
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Helper {
@@ -58,6 +59,20 @@ public class Helper {
 
     public static boolean isDateInFuture(LocalDateTime dateTime) {
         return dateTime != null && dateTime.isAfter(LocalDateTime.now());
+    }
+
+    public static boolean isTrue(boolean b){
+        if(b == true)
+            return true;
+        return false;
+    }
+
+    public static LocalDate getDate(String id){
+        int year = Integer.parseInt(id.substring(0,2));
+        int month = Integer.parseInt(id.substring(2,4));
+        int day = Integer.parseInt(id.substring(4,6));
+        LocalDate date = LocalDate.of(year,month,day);
+        return date;
     }
 
     public static boolean isValidLong(Long value) {

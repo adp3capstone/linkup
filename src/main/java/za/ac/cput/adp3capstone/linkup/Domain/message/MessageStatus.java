@@ -1,4 +1,4 @@
-package za.ac.cput.adp3capstone.linkup.domain.message;
+package za.ac.cput.adp3capstone.linkup.Domain.message;
 
 /* MessageStatus.java
 MessageStatus enum
