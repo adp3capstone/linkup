@@ -1,5 +1,8 @@
 package za.ac.cput.adp3capstone.linkup.factory;
-
+/* Image Factory Test.java
+Author: Ethan Le Roux (222622172)
+Date:18 May 2025
+*/
 import org.junit.jupiter.api.Test;
 import za.ac.cput.adp3capstone.linkup.domain.Image;
 
