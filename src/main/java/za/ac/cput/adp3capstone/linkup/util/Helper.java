@@ -2,7 +2,7 @@ package za.ac.cput.adp3capstone.linkup.util;
 
 public class Helper {
     public static boolean isStringNullOrEmpty(String x){
-        if(x.isEmpty() || x == null)
+        if(x == null || x.isEmpty())
             return true;
         return false;
     }
@@ -37,4 +37,9 @@ public class Helper {
         }
         return false;
     }
+
+    public static boolean isValidLong(Long value) {
+        return value != null && value > 0;
+    }
+
 }
