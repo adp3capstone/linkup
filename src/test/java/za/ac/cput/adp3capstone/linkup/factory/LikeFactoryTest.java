@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-class LikeFatoryTest {
+class LikeFactoryTest {
 
     @Test
     void a_createLike_successful() {
