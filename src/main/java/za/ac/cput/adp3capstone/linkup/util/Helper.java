@@ -7,6 +7,11 @@ public class Helper {
         return false;
     }
 
+    public static boolean isValidEmail(String email) {
+        String emailRegex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
+        return email != null && email.matches(emailRegex);
+    }
+
     public static boolean isIntNull(int y){
         if(y == 0)
             return true;

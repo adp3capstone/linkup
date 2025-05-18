@@ -1,4 +1,4 @@
-package za.ac.cput.adp3capstone.linkup.domain;
+package za.ac.cput.adp3capstone.linkup.Domain;
 
 /* Preference.java
 Author: SH Kgomokaboya (222152672)

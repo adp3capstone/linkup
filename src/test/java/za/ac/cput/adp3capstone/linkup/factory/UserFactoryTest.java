@@ -7,6 +7,7 @@ package za.ac.cput.adp3capstone.linkup.factory;
 
 import org.junit.jupiter.api.Test;
 import za.ac.cput.adp3capstone.linkup.Domain.User;
+import za.ac.cput.adp3capstone.linkup.domain.Gender;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -18,8 +19,7 @@ class UserFactoryTest {
             "jane@example.com",
             "Jane",
             "Doe",
-            "25",
-            "FEMALE"
+            "25", Gender.MALE
     );
 
     @Test

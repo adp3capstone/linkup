@@ -6,7 +6,10 @@ package za.ac.cput.adp3capstone.linkup.factory;
  * Date: 17/05/2025
  */
 
+
+
 import za.ac.cput.adp3capstone.linkup.Domain.Preference;
+import za.ac.cput.adp3capstone.linkup.util.Helper;
 
 import java.util.List;
 
@@ -25,11 +28,11 @@ public class PreferenceFactory {
             return null;
         }
 
-        if (Helper.isNullOrEmpty(preferredGender)) {
+        if (Helper.isStringNullOrEmpty(preferredGender)) {
             return null;
         }
 
-        if (Helper.isNullOrEmpty(relationshipType)) {
+        if (Helper.isStringNullOrEmpty(relationshipType)) {
             return null;
         }
 
@@ -58,7 +61,7 @@ public class PreferenceFactory {
             return null;
         }
 
-        if (Helper.isNullOrEmpty(preferredGender)) {
+        if (Helper.isStringNullOrEmpty(preferredGender)) {
             return null;
         }
 

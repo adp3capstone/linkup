@@ -1,4 +1,5 @@
 package za.ac.cput.adp3capstone.linkup.factory;
+import  za.ac.cput.adp3capstone.linkup.domain.Gender;
 
 /**
  * UserFactory.java
@@ -6,9 +7,10 @@ package za.ac.cput.adp3capstone.linkup.factory;
  * Date: 17/05/2025
  */
 
-import za.ac.cput.adp3capstone.linkup.Domain.Gender;
+
 import za.ac.cput.adp3capstone.linkup.Domain.Preference;
 import za.ac.cput.adp3capstone.linkup.Domain.User;
+import za.ac.cput.adp3capstone.linkup.util.Helper;
 
 import java.util.List;
 
@@ -19,9 +21,9 @@ public class UserFactory {
                                   String yearOfStudy, boolean isVerified, Preference preferences,
                                   List<String> likes, List<String> matches, List<String> images) {
 
-        if (userId <= 0 || Helper.isNullOrEmpty(username) || Helper.isNullOrEmpty(password) ||
-                Helper.isNullOrEmpty(email) || Helper.isNullOrEmpty(firstName) ||
-                Helper.isNullOrEmpty(lastName) || Helper.isNullOrEmpty(age) || gender == null) {
+        if (userId <= 0 || Helper.isStringNullOrEmpty(username) || Helper.isStringNullOrEmpty(password) ||
+               Helper.isStringNullOrEmpty(firstName) ||
+                Helper.isStringNullOrEmpty(lastName) || Helper.isStringNullOrEmpty(age) || gender == null) {
             return null;
         }
 
@@ -51,7 +53,7 @@ public class UserFactory {
                 .setUniversity(university)
                 .setCourse(course)
                 .setYearOfStudy(yearOfStudy)
-                .setIsVerified(isVerified)
+                .setVerified(isVerified)
                 .setPreferences(preferences)
                 .setLikes(likes)
                 .setMatches(matches)
@@ -63,9 +65,9 @@ public class UserFactory {
                                        String email, String firstName, String lastName,
                                        String age, Gender gender) {
 
-        if (userId <= 0 || Helper.isNullOrEmpty(username) || Helper.isNullOrEmpty(password) ||
-                Helper.isNullOrEmpty(email) || Helper.isNullOrEmpty(firstName) ||
-                Helper.isNullOrEmpty(lastName) || Helper.isNullOrEmpty(age) || gender == null) {
+        if (userId <= 0 || Helper.isStringNullOrEmpty(username) || Helper.isStringNullOrEmpty(password)
+                || Helper.isStringNullOrEmpty(firstName) ||
+                Helper.isStringNullOrEmpty(lastName) || Helper.isStringNullOrEmpty(age) || gender == null) {
             return null;
         }
 
