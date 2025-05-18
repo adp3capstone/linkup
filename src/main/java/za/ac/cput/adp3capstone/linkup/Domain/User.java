@@ -6,8 +6,8 @@ import java.util.List;
 
 /**
  * User.java
- * Author: SH Kgomokaboya (222152672)
- * Date: 11 May 2025
+ * Author: Hope Kgomokaboya(222152672)
+ * Date: 17/05/2025.
  */
 public class User {
 
