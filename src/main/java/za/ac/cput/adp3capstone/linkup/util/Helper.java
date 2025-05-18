@@ -1,5 +1,8 @@
 package za.ac.cput.adp3capstone.linkup.util;
 
+
+import java.time.LocalDateTime;
+
 public class Helper {
     public static boolean isStringNullOrEmpty(String x){
         if(x.isEmpty() || x == null)
@@ -37,4 +40,19 @@ public class Helper {
         }
         return false;
     }
+
+    public static boolean isValidEmail(String email) {
+        return !isStringNullOrEmpty(email) &&
+                email.matches("^[\\w-.]+@([\\w-]+\\.)+[\\w-]{2,4}$");
+    }
+
+
+    public static boolean isDateNull(LocalDateTime dateTime) {
+        return dateTime == null;
+    }
+
+    public static boolean isDateInFuture(LocalDateTime dateTime) {
+        return dateTime != null && dateTime.isAfter(LocalDateTime.now());
+    }
+
 }
