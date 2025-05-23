@@ -47,10 +47,6 @@ public class Helper {
         return false;
     }
   
-    public static boolean isValidEmail(String email) {
-        return !isStringNullOrEmpty(email) &&
-                email.matches("^[\\w-.]+@([\\w-]+\\.)+[\\w-]{2,4}$");
-    }
 
 
     public static boolean isDateNull(LocalDateTime dateTime) {
