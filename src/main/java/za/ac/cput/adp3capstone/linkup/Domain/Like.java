@@ -5,10 +5,15 @@ Date : 11May 2025
  */
 
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.time.LocalDateTime;
 
+@Entity
 public class Like {
-    private int likeId;
+    @Id
+    private long likeId;
     private int fromUserId;
     private int toUserId;
     private LocalDateTime timestamp;
@@ -25,7 +30,7 @@ public class Like {
 
     }
 
-    public int getLikeId() {
+    public long getLikeId() {
         return likeId;
     }
 
@@ -52,7 +57,7 @@ public class Like {
     }
 
     public static class Builder{
-        private int likeId;
+        private long likeId;
         private int fromUserId;
         private int toUserId;
         private LocalDateTime timestamp;
@@ -62,7 +67,7 @@ public class Like {
             return this;
         }
 
-        public Builder setLikeId(int likeId) {
+        public Builder setLikeId(long likeId) {
             this.likeId = likeId;
             return this;
         }
