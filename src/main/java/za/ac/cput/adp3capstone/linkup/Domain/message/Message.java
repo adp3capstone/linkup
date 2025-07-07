@@ -7,6 +7,8 @@ Date:9 May 2025
 */
 
 import java.time.LocalDate;
+import za.ac.cput.adp3capstone.linkup.Domain.message.MessageStatus;
+import za.ac.cput.adp3capstone.linkup.Domain.message.MessageType;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
