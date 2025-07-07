@@ -1,8 +1,8 @@
-package za.ac.cput.adp3capstone.linkup.Domain;
+package za.ac.cput.domain;
 
 /* Preference.java
 Author: SH Kgomokaboya (222152672)
-Date: 11 May 2025.
+Date: 11 May 2025
 */
 
 import java.util.List;
