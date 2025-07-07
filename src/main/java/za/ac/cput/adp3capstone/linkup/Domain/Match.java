@@ -1,11 +1,16 @@
 package za.ac.cput.adp3capstone.linkup.Domain;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.time.LocalDateTime;
 /*Like.java
 Author: LM Makhanya(222788291)
 Date : 11May 2025
  */
 
+@Entity
 public class Match {
+    @Id
     private int matchId;
     private int userAId;
     private int userBId;
