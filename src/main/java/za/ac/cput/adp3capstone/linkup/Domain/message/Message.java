@@ -10,7 +10,15 @@ import java.time.LocalDate;
 import za.ac.cput.adp3capstone.linkup.Domain.message.MessageStatus;
 import za.ac.cput.adp3capstone.linkup.Domain.message.MessageType;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import za.ac.cput.adp3capstone.linkup.Domain.message.MessageStatus;
+import za.ac.cput.adp3capstone.linkup.Domain.message.MessageType;
+
+@Entity
 public class Message {
+
+    @Id
     private long messageId;
     private long senderId;
     private long receiverId;
@@ -24,9 +32,22 @@ public class Message {
     private String attachmentUrl;
     private MessageType messageType;
 
-    private Message(){}
+    protected Message(){}
 
-    private Message(Builder builder) {}
+    private Message(Builder builder) {
+        this.messageId = builder.messageId;
+        this.senderId = builder.senderId;
+        this.receiverId = builder.receiverId;
+        this.conversationId = builder.conversationId;
+        this.replyToMessageId = builder.replyToMessageId;
+        this.message = builder.message;
+        this.timestamp = builder.timestamp;
+        this.isRead = builder.isRead;
+        this.isDeleted = builder.isDeleted;
+        this.status = builder.status;
+        this.attachmentUrl = builder.attachmentUrl;
+        this.messageType = builder.messageType;
+    }
 
     public long getMessageId() {
         return messageId;
@@ -74,6 +95,24 @@ public class Message {
 
     public MessageType getMessageType() {
         return messageType;
+    }
+
+    @Override
+    public String toString() {
+        return "Message{" +
+                "messageId=" + messageId +
+                ", senderId=" + senderId +
+                ", receiverId=" + receiverId +
+                ", conversationId=" + conversationId +
+                ", replyToMessageId=" + replyToMessageId +
+                ", message='" + message + '\'' +
+                ", timestamp=" + timestamp +
+                ", isRead=" + isRead +
+                ", isDeleted=" + isDeleted +
+                ", status=" + status +
+                ", attachmentUrl='" + attachmentUrl + '\'' +
+                ", messageType=" + messageType +
+                '}';
     }
 
     public static class Builder{
