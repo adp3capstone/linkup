@@ -74,4 +74,8 @@ public class Helper {
         return value != null && value > 0;
     }
 
+    public static boolean isValidPhoneNumber(String phoneNumber) {
+        // Check if the phone number is numeric and has a valid length
+        return phoneNumber.matches("\\d{10}");
+    }
 }
