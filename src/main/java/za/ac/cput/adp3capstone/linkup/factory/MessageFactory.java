@@ -16,7 +16,7 @@ public class MessageFactory {
                 || Helper.isStringNullOrEmpty(attachmentUrl) || Helper.isObjectNull(messageType))
             return null;
 
-        LocalDate timestamp = Helper.getDate(message);
+       // LocalDate timestamp = Helper.getDate(message);
 
         return new Message.Builder().setMessageId(messageId)
                 .setSenderId(senderId)
@@ -24,7 +24,7 @@ public class MessageFactory {
                 .setConversationId(conversationId)
                 .setReplyToMessageId(replyToMessageId)
                 .setMessage(message)
-                .setTimestamp(timestamp)
+              //  .setTimestamp(timestamp)
                 .setRead(isRead)
                 .setDeleted(isDeleted)
                 .setStatus(status)
